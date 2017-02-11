@@ -11,7 +11,7 @@ let categories = {};
 let bookmarks = {};
 
 db.on('value', (snapshot) => {
-    var bookmarkData = snapshot.val();
+    let bookmarkData = snapshot.val();
     if (bookmarkData){
         categories = bookmarkData.categories;
         bookmarks = bookmarkData.bookmarks;

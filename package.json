@@ -25,7 +25,8 @@
     "vue-html-loader": "^1.2.3",
     "vue-loader": "^10.3.0",
     "vue-style-loader": "^2.0.0",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "webpack": "^2.1.0",
+    "webpack-dev-server": "^2.3.0",
+    "vue-template-compiler": "^2.0.0"
   }
 }

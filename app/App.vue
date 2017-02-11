@@ -1,3 +1,4 @@
+<script src="../../../../Downloads/bookmarking-app-electron-vuejs-firebase-master/app/filters/index.js"></script>
 <template>
     <div id="app">
         <sidebar
@@ -23,7 +24,7 @@
             BookmarkList
         },
 
-        data() {
+        data () {
             return {
                 categories: {},
                 bookmarks: {},
@@ -36,13 +37,10 @@
         },
 
         created () {
-            // assign the event handler `updateListings` to the `data-updated` event
             store.on('data-updated', this.updateListings)
         },
 
         methods: {
-            // set the bookmarks and categories data properties to the new ones
-            // received from the store
             updateListings (categories, bookmarks) {
                 this.categories = categories;
                 this.bookmarks = bookmarks
@@ -53,5 +51,4 @@
             }
         }
     }
-
 </script>
